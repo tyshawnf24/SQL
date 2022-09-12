@@ -1,0 +1,26 @@
+Create table store (id integer primary key, Bike text, price integer, amount_sold integer, amount_stock integer, color text);
+
+Insert into store values 
+(1, 'Mountain Bike', 50, 2, 5, 'blue'),
+(2, 'BMX BIKE', 40, 4, 5, 'grey'),
+(3, 'Scooter', 140, 2, 5,'green'),
+(4, 'E-Bike', 200, 8, 2, 'black'),
+(5, 'Road-Bike', 150, 4, 1, 'black'),
+(6, 'Moped', 160, 10, 5, 'blue'),
+(7, 'Folding-Bike', 200, 20, 15, 'black'),
+(8, 'Cruiser', 70, 8, 3, 'purple'),
+(9, 'Track Bike', 210, 0, 20, 'orange'),
+(10, 'Touring Bike', 80, 5, 2, 'Green'),
+(11, 'Recumbent Bike', 90, 8, 9, 'Yellow'),
+(12, 'Hyrbrid Bike', 150, 9, 9, 'violet'),
+(13, 'Cyclocross Bike', 350, 25, 10, 'black'),
+(14, 'Moon Bike', 600, 3, 1, 'White'),
+(15, 'Earth Bike', 600, 3, 1, 'blue');
+
+---display the database order by price- Highest to lowest
+select bike from store
+order by price desc;
+
+--display the dataset of the price of the bikes,the name of the bikes and the amount sold.
+select price,bike,amount_sold from store
+order by amount_sold
